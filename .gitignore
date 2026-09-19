@@ -1,0 +1,31 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset files
+data/*.csv
+
+# Generated vector database
+outputs/chroma_db/
+
+# Temporary review and backup files
+outputs/*_review.json
+outputs/*_review_backup.json
+outputs/*_integrated.json_review.json
+outputs/*_investigation.json_review.json
+
+# System/editor files
+.DS_Store
+Thumbs.db
+.vscode/

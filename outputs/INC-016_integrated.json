@@ -1,0 +1,73 @@
+{
+    "incident_id": "INC-016",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "reviewer_decision": null,
+    "reviewer_name": null,
+    "reviewer_notes": null,
+    "impact_estimate": {
+        "status": "ESTIMATED",
+        "observations_compared": 17,
+        "total_actual_consumption": 2254.0,
+        "total_expected_consumption": 2330.5,
+        "estimated_excess_consumption": 232.0,
+        "potential_reduction_scenarios": {
+            "10%": 23.2,
+            "25%": 58.0,
+            "50%": 116.0
+        },
+        "unit": "meter units; confirm dataset meter unit",
+        "interpretation": "Scenario estimates only. Excess consumption is not proof of avoidable waste or achievable savings."
+    },
+    "recommendations": [
+        {
+            "incident_id": "INC-016",
+            "hypothesis": "Possible unusual building operating schedule",
+            "evidence_level": "MODERATE",
+            "recommended_action": "Review the building's operating schedule, occupancy records, and any after-hours activities during the incident.",
+            "priority": "High",
+            "reason": "The incident may be associated with an unusual operating schedule. Verify against facility records.",
+            "human_verification_required": true,
+            "automated_control_performed": false
+        },
+        {
+            "incident_id": "INC-016",
+            "hypothesis": "Possible HVAC-related behavior",
+            "evidence_level": "MODERATE",
+            "recommended_action": "Review HVAC schedules, setpoints, runtime logs, and maintenance records for the incident period.",
+            "priority": "High",
+            "reason": "HVAC-related behavior is a plausible explanation, but supporting meter patterns alone do not prove it.",
+            "human_verification_required": true,
+            "automated_control_performed": false
+        },
+        {
+            "incident_id": "INC-016",
+            "hypothesis": "Possible lighting or equipment operation",
+            "evidence_level": "MODERATE",
+            "recommended_action": "Inspect lighting and equipment schedules, after-hours usage, and relevant control logs.",
+            "priority": "Medium",
+            "reason": "Lighting or equipment operation may contribute to unusual consumption; verify before acting.",
+            "human_verification_required": true,
+            "automated_control_performed": false
+        }
+    ],
+    "automated_action_taken": false,
+    "created_at_utc": "2026-09-19T12:49:45.719469+00:00",
+    "audit_events": [
+        {
+            "event": "IMPACT_ESTIMATED",
+            "timestamp_utc": "2026-09-19T12:49:45.719469+00:00"
+        },
+        {
+            "event": "SENT_FOR_HUMAN_REVIEW",
+            "timestamp_utc": "2026-09-19T12:49:45.721591+00:00"
+        }
+    ],
+    "building_id": "Eagle_education_Wesley",
+    "investigation_status": "READY_FOR_REASONING",
+    "tools_used": [
+        "current_meter_evidence",
+        "historical_evidence",
+        "rag_knowledge_retrieval",
+        "evidence_scoring"
+    ]
+}

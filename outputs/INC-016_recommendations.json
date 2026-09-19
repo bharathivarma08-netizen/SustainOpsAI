@@ -1,0 +1,37 @@
+{
+    "incident_id": "INC-016",
+    "generated_at_utc": "2026-09-19T12:29:09.296058+00:00",
+    "recommendations": [
+        {
+            "incident_id": "INC-016",
+            "hypothesis": "Possible unusual building operating schedule",
+            "evidence_level": "Not specified",
+            "recommended_action": "Review the building's operating schedule, occupancy records, and any after-hours activities during the incident.",
+            "priority": "High",
+            "reason": "The incident may be associated with an unusual operating schedule. Verify against facility records.",
+            "human_verification_required": true,
+            "automated_control_performed": false
+        },
+        {
+            "incident_id": "INC-016",
+            "hypothesis": "Possible HVAC-related behavior",
+            "evidence_level": "Not specified",
+            "recommended_action": "Review HVAC schedules, setpoints, runtime logs, and maintenance records for the incident period.",
+            "priority": "High",
+            "reason": "HVAC-related behavior is a plausible explanation, but supporting meter patterns alone do not prove it.",
+            "human_verification_required": true,
+            "automated_control_performed": false
+        },
+        {
+            "incident_id": "INC-016",
+            "hypothesis": "Possible lighting or equipment operation",
+            "evidence_level": "Not specified",
+            "recommended_action": "Inspect lighting and equipment schedules, after-hours usage, and relevant control logs.",
+            "priority": "Medium",
+            "reason": "Lighting or equipment operation may contribute to unusual consumption; verify before acting.",
+            "human_verification_required": true,
+            "automated_control_performed": false
+        }
+    ],
+    "notice": "Recommendations are decision-support suggestions. They do not establish causality and require human review."
+}

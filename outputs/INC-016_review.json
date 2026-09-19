@@ -1,0 +1,10 @@
+
+{
+    "incident_id": "INC-016",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "reviewer_decision": null,
+    "reviewer_name": null,
+    "reviewer_notes": null,
+    "automated_action_taken": false,
+    "audit_events": []
+}

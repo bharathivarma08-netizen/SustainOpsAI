@@ -1,0 +1,551 @@
+{
+    "incident": {
+        "incident_id": "INC-016",
+        "building_id": "Eagle_education_Wesley",
+        "start": "2017-10-04 20:00:00",
+        "end": "2017-10-05 12:00:00"
+    },
+    "investigation_status": "READY_FOR_REASONING",
+    "building_id": "Eagle_education_Wesley",
+    "tools_used": [
+        "current_meter_evidence",
+        "historical_evidence",
+        "rag_knowledge_retrieval",
+        "evidence_scoring"
+    ],
+    "investigation_log": [
+        "Investigation started for INC-016.",
+        "Inspected current meter behavior during the incident period.",
+        "Compared incident electricity observations with previous observations for matching month, weekday and hour.",
+        "Retrieved sustainability knowledge relevant to possible explanations.",
+        "Assessed supporting and limiting evidence for possible explanations.",
+        "Required evidence layers are available for hypothesis generation."
+    ],
+    "current_meter_evidence": {
+        "electricity": [
+            {
+                "timestamp": "2017-10-04T20:00:00",
+                "electricity": 241.0
+            },
+            {
+                "timestamp": "2017-10-04T21:00:00",
+                "electricity": 183.0
+            },
+            {
+                "timestamp": "2017-10-04T22:00:00",
+                "electricity": 164.0
+            },
+            {
+                "timestamp": "2017-10-04T23:00:00",
+                "electricity": 147.0
+            },
+            {
+                "timestamp": "2017-10-05T00:00:00",
+                "electricity": 155.0
+            },
+            {
+                "timestamp": "2017-10-05T01:00:00",
+                "electricity": 153.0
+            },
+            {
+                "timestamp": "2017-10-05T02:00:00",
+                "electricity": 156.0
+            },
+            {
+                "timestamp": "2017-10-05T03:00:00",
+                "electricity": 138.0
+            },
+            {
+                "timestamp": "2017-10-05T04:00:00",
+                "electricity": 147.0
+            },
+            {
+                "timestamp": "2017-10-05T05:00:00",
+                "electricity": 80.0
+            },
+            {
+                "timestamp": "2017-10-05T06:00:00",
+                "electricity": 78.0
+            },
+            {
+                "timestamp": "2017-10-05T07:00:00",
+                "electricity": 66.0
+            },
+            {
+                "timestamp": "2017-10-05T08:00:00",
+                "electricity": 68.0
+            },
+            {
+                "timestamp": "2017-10-05T09:00:00",
+                "electricity": 70.0
+            },
+            {
+                "timestamp": "2017-10-05T10:00:00",
+                "electricity": 79.0
+            },
+            {
+                "timestamp": "2017-10-05T11:00:00",
+                "electricity": 146.0
+            },
+            {
+                "timestamp": "2017-10-05T12:00:00",
+                "electricity": 183.0
+            }
+        ],
+        "steam": [
+            {
+                "timestamp": "2017-10-04T20:00:00",
+                "steam": 0.1292
+            },
+            {
+                "timestamp": "2017-10-04T21:00:00",
+                "steam": 0.1136
+            },
+            {
+                "timestamp": "2017-10-04T22:00:00",
+                "steam": 0.0984
+            },
+            {
+                "timestamp": "2017-10-04T23:00:00",
+                "steam": 0.1521
+            },
+            {
+                "timestamp": "2017-10-05T00:00:00",
+                "steam": 0.1792
+            },
+            {
+                "timestamp": "2017-10-05T01:00:00",
+                "steam": 0.1459
+            },
+            {
+                "timestamp": "2017-10-05T02:00:00",
+                "steam": 0.1265
+            },
+            {
+                "timestamp": "2017-10-05T03:00:00",
+                "steam": 0.1327
+            },
+            {
+                "timestamp": "2017-10-05T04:00:00",
+                "steam": 0.1286
+            },
+            {
+                "timestamp": "2017-10-05T05:00:00",
+                "steam": 0.1353
+            },
+            {
+                "timestamp": "2017-10-05T06:00:00",
+                "steam": 0.0789
+            },
+            {
+                "timestamp": "2017-10-05T07:00:00",
+                "steam": 0.0879
+            },
+            {
+                "timestamp": "2017-10-05T08:00:00",
+                "steam": 0.1178
+            },
+            {
+                "timestamp": "2017-10-05T09:00:00",
+                "steam": 0.101
+            },
+            {
+                "timestamp": "2017-10-05T10:00:00",
+                "steam": 0.0998
+            },
+            {
+                "timestamp": "2017-10-05T11:00:00",
+                "steam": 0.1399
+            },
+            {
+                "timestamp": "2017-10-05T12:00:00",
+                "steam": 0.1119
+            }
+        ],
+        "chilled_water": [
+            {
+                "timestamp": "2017-10-04T20:00:00",
+                "chilled_water": 317322.5666
+            },
+            {
+                "timestamp": "2017-10-04T21:00:00",
+                "chilled_water": 309144.3618
+            },
+            {
+                "timestamp": "2017-10-04T22:00:00",
+                "chilled_water": 294284.1088
+            },
+            {
+                "timestamp": "2017-10-04T23:00:00",
+                "chilled_water": 301748.041
+            },
+            {
+                "timestamp": "2017-10-05T00:00:00",
+                "chilled_water": 287695.0814
+            },
+            {
+                "timestamp": "2017-10-05T01:00:00",
+                "chilled_water": 248875.4829
+            },
+            {
+                "timestamp": "2017-10-05T02:00:00",
+                "chilled_water": 230422.4139
+            },
+            {
+                "timestamp": "2017-10-05T03:00:00",
+                "chilled_water": 187918.0044
+            },
+            {
+                "timestamp": "2017-10-05T04:00:00",
+                "chilled_water": 206627.6864
+            },
+            {
+                "timestamp": "2017-10-05T05:00:00",
+                "chilled_water": 32093.5898
+            },
+            {
+                "timestamp": "2017-10-05T06:00:00",
+                "chilled_water": 29409.2352
+            },
+            {
+                "timestamp": "2017-10-05T07:00:00",
+                "chilled_water": 28676.0888
+            },
+            {
+                "timestamp": "2017-10-05T08:00:00",
+                "chilled_water": 29048.5821
+            },
+            {
+                "timestamp": "2017-10-05T09:00:00",
+                "chilled_water": 31894.5066
+            },
+            {
+                "timestamp": "2017-10-05T10:00:00",
+                "chilled_water": 25522.176
+            },
+            {
+                "timestamp": "2017-10-05T11:00:00",
+                "chilled_water": 172283.7802
+            },
+            {
+                "timestamp": "2017-10-05T12:00:00",
+                "chilled_water": 173431.5342
+            }
+        ],
+        "hot_water": [
+            {
+                "timestamp": "2017-10-04T20:00:00",
+                "hot_water": 99756.0345
+            },
+            {
+                "timestamp": "2017-10-04T21:00:00",
+                "hot_water": 519.4097
+            },
+            {
+                "timestamp": "2017-10-04T22:00:00",
+                "hot_water": 91156.0712
+            },
+            {
+                "timestamp": "2017-10-04T23:00:00",
+                "hot_water": 122113.073
+            },
+            {
+                "timestamp": "2017-10-05T00:00:00",
+                "hot_water": 100893.1207
+            },
+            {
+                "timestamp": "2017-10-05T01:00:00",
+                "hot_water": 121494.2536
+            },
+            {
+                "timestamp": "2017-10-05T02:00:00",
+                "hot_water": 125532.2151
+            },
+            {
+                "timestamp": "2017-10-05T03:00:00",
+                "hot_water": 82412.6203
+            },
+            {
+                "timestamp": "2017-10-05T04:00:00",
+                "hot_water": 130695.7451
+            },
+            {
+                "timestamp": "2017-10-05T05:00:00",
+                "hot_water": 470.8479
+            },
+            {
+                "timestamp": "2017-10-05T06:00:00",
+                "hot_water": 465.7777
+            },
+            {
+                "timestamp": "2017-10-05T07:00:00",
+                "hot_water": 611.1703
+            },
+            {
+                "timestamp": "2017-10-05T08:00:00",
+                "hot_water": 610.9358
+            },
+            {
+                "timestamp": "2017-10-05T09:00:00",
+                "hot_water": 486.0289
+            },
+            {
+                "timestamp": "2017-10-05T10:00:00",
+                "hot_water": 624.7395
+            },
+            {
+                "timestamp": "2017-10-05T11:00:00",
+                "hot_water": 162131.7422
+            },
+            {
+                "timestamp": "2017-10-05T12:00:00",
+                "hot_water": 82267.5501
+            }
+        ]
+    },
+    "historical_evidence": [
+        {
+            "timestamp": "2017-10-04T20:00:00",
+            "actual_electricity": 241.0,
+            "historical_expected": 178.5,
+            "relative_deviation": 0.35014005602240894,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-04T21:00:00",
+            "actual_electricity": 183.0,
+            "historical_expected": 173.0,
+            "relative_deviation": 0.057803468208092484,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-04T22:00:00",
+            "actual_electricity": 164.0,
+            "historical_expected": 154.0,
+            "relative_deviation": 0.06493506493506493,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-04T23:00:00",
+            "actual_electricity": 147.0,
+            "historical_expected": 145.0,
+            "relative_deviation": 0.013793103448275862,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-05T00:00:00",
+            "actual_electricity": 155.0,
+            "historical_expected": 143.5,
+            "relative_deviation": 0.08013937282229965,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-05T01:00:00",
+            "actual_electricity": 153.0,
+            "historical_expected": 136.5,
+            "relative_deviation": 0.12087912087912088,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-05T02:00:00",
+            "actual_electricity": 156.0,
+            "historical_expected": 128.0,
+            "relative_deviation": 0.21875,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-05T03:00:00",
+            "actual_electricity": 138.0,
+            "historical_expected": 128.0,
+            "relative_deviation": 0.078125,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-05T04:00:00",
+            "actual_electricity": 147.0,
+            "historical_expected": 126.0,
+            "relative_deviation": 0.16666666666666666,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-05T05:00:00",
+            "actual_electricity": 80.0,
+            "historical_expected": 124.5,
+            "relative_deviation": -0.357429718875502,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-05T06:00:00",
+            "actual_electricity": 78.0,
+            "historical_expected": 127.5,
+            "relative_deviation": -0.38823529411764707,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-05T07:00:00",
+            "actual_electricity": 66.0,
+            "historical_expected": 127.0,
+            "relative_deviation": -0.48031496062992124,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-05T08:00:00",
+            "actual_electricity": 68.0,
+            "historical_expected": 122.0,
+            "relative_deviation": -0.4426229508196721,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-05T09:00:00",
+            "actual_electricity": 70.0,
+            "historical_expected": 120.5,
+            "relative_deviation": -0.4190871369294606,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-05T10:00:00",
+            "actual_electricity": 79.0,
+            "historical_expected": 128.0,
+            "relative_deviation": -0.3828125,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-05T11:00:00",
+            "actual_electricity": 146.0,
+            "historical_expected": 130.0,
+            "relative_deviation": 0.12307692307692308,
+            "history_count": 4
+        },
+        {
+            "timestamp": "2017-10-05T12:00:00",
+            "actual_electricity": 183.0,
+            "historical_expected": 138.5,
+            "relative_deviation": 0.3212996389891697,
+            "history_count": 4
+        }
+    ],
+    "rag_evidence": [
+        {
+            "query": "Could HVAC-related behavior explain an unusual electricity anomaly?",
+            "results": [
+                {
+                    "source": "hvac_energy.md",
+                    "chunk": 2,
+                    "text": "## Investigation Context\n\nAn unusual increase in electricity consumption may coincide with changes\nin heating or cooling-related meter behavior.\n\nSupporting meter data can therefore be examined when investigating an\nelectricity anomaly.\n\nHowever, correlation between electricity consumption and another meter\ndoes not by itself establish that the supporting system caused the\nelectricity anomaly.",
+                    "distance": 0.859942615032196
+                },
+                {
+                    "source": "hvac_energy.md",
+                    "chunk": 0,
+                    "text": "# HVAC and Building Energy Consumption",
+                    "distance": 0.9489994645118713
+                }
+            ]
+        },
+        {
+            "query": "Could unusual building operating schedules explain an electricity anomaly?",
+            "results": [
+                {
+                    "source": "building_operations.md",
+                    "chunk": 2,
+                    "text": "## Investigation Context\n\nWhen an energy anomaly is detected, investigators should consider whether\nthe building was operating under an unusual schedule.\n\nExamples include:\n\n- extended operating hours\n- special events\n- maintenance activities\n- changes in occupancy\n- equipment operating outside normal schedules",
+                    "distance": 0.6940717697143555
+                },
+                {
+                    "source": "hvac_energy.md",
+                    "chunk": 3,
+                    "text": "## Evidence Interpretation\n\nWhen investigating a suspected energy anomaly:\n\n1. Compare the supporting meter with its historical behavior.\n2. Check whether the change occurs during the same incident period.\n3. Consider the building's operating schedule.\n4. Examine other available evidence.\n5. Treat the result as a hypothesis unless causal evidence is available.",
+                    "distance": 0.8144407868385315
+                }
+            ]
+        },
+        {
+            "query": "Could lighting or equipment operation explain unexpectedly high electricity consumption?",
+            "results": [
+                {
+                    "source": "lighting_equipment.md",
+                    "chunk": 1,
+                    "text": "## Overview\n\nLighting systems and electrical equipment contribute to building\nelectricity consumption.\n\nTheir energy use can depend on operating schedules, occupancy, equipment\nusage, and whether equipment remains active when spaces are not normally\noccupied.",
+                    "distance": 0.6373909711837769
+                },
+                {
+                    "source": "lighting_equipment.md",
+                    "chunk": 0,
+                    "text": "# Lighting and Equipment Energy Use",
+                    "distance": 0.7464794516563416
+                }
+            ]
+        }
+    ],
+    "evidence_assessment": {
+        "incident": {
+            "incident_id": "INC-016",
+            "building_id": "Eagle_education_Wesley",
+            "start": "2017-10-04 20:00:00",
+            "end": "2017-10-05 12:00:00"
+        },
+        "historical_summary": {
+            "status": "AVAILABLE",
+            "positive_count": 11,
+            "negative_count": 6,
+            "strongest_positive_deviation": 0.35014005602240894,
+            "strongest_negative_deviation": -0.48031496062992124,
+            "average_positive_deviation": 0.1450553104589111,
+            "average_negative_deviation": -0.41175042689536717,
+            "average_history_count": 4.0
+        },
+        "hypotheses": [
+            {
+                "hypothesis": "Possible unusual building operating schedule",
+                "supporting_evidence": [
+                    "Retrieved domain knowledge identifies unusual operating schedules as a possible explanation for energy anomalies.",
+                    "Retrieved domain knowledge identifies changes in occupancy as a possible factor.",
+                    "Historical evidence shows periods where electricity consumption exceeded the historical reference."
+                ],
+                "contradicting_evidence": [
+                    "The incident also contains substantial periods below the historical reference, so the entire incident cannot be described as uniformly high consumption."
+                ],
+                "evidence_quality": "MODERATE"
+            },
+            {
+                "hypothesis": "Possible HVAC-related behavior",
+                "supporting_evidence": [
+                    "Retrieved domain knowledge indicates that heating or cooling-related behavior can coincide with unusual electricity consumption.",
+                    "The knowledge base recommends examining heating/cooling-related meter behavior during electricity anomaly investigation.",
+                    "Historical evidence confirms that electricity was above its historical reference during several incident observations."
+                ],
+                "contradicting_evidence": [
+                    "Current supporting-meter values alone do not establish that HVAC behavior caused the electricity deviation.",
+                    "Additional historical behavior of the HVAC-related supporting meter would be required for stronger evidence."
+                ],
+                "evidence_quality": "MODERATE"
+            },
+            {
+                "hypothesis": "Possible lighting or equipment operation",
+                "supporting_evidence": [
+                    "Retrieved domain knowledge identifies lighting as a contributor to building electricity consumption.",
+                    "Retrieved domain knowledge identifies equipment operation and operating schedules as possible contributors to unusual electricity consumption.",
+                    "Historical evidence shows several periods above the historical electricity reference."
+                ],
+                "contradicting_evidence": [
+                    "Electricity meter data alone cannot identify which individual equipment or lighting system was responsible.",
+                    "Operational or equipment records are needed to strengthen this hypothesis."
+                ],
+                "evidence_quality": "MODERATE"
+            }
+        ],
+        "evidence_quality": {
+            "historical_evidence": "AVAILABLE",
+            "historical_observations": 17,
+            "average_history_count": 4.0,
+            "rag_sources": 3,
+            "limitations": [
+                "Historical comparisons use a limited number of previous observations.",
+                "Supporting meter magnitudes are not directly comparable because they use different scales.",
+                "RAG evidence provides domain knowledge and investigation guidance, not proof of a specific cause.",
+                "No causal conclusion should be made without additional operational evidence."
+            ]
+        }
+    },
+    "next_stage": "IBM Granite reasoning"
+}
